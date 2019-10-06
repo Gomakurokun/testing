@@ -1,5 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: left;
+}
+
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -10,10 +19,10 @@
 .top-wrapper {
   padding-top: 180px;
   padding-bottom: 100px;
-  background-image: url("https://github.com/Gomakurokun/testing/blob/master/夜景.jpg?raw=true");
+  background-image: url("../img/夜景.jpg");
   background-size: cover;
   border: 1px solid #CCC;
-  color:   color: #ff7f50;
+  color: #ff7f50;
   text-align: center;
 }
 
@@ -25,7 +34,7 @@
 
 .top-wrapper p {
   opacity: 0.8;
-  font-size:33px;
+  font-size: 33px;
 }
 
 .btn {
@@ -90,6 +99,15 @@ header {
  
 }
 
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+  
+}
+
 .header-right {
   float: right;
   background-color: rgba(255, 255, 255, 0.3);
@@ -111,7 +129,6 @@ display: block;
 }
 
 .lesson-wrapper {
-  height: 500px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
   text-align: center;
@@ -186,4 +203,18 @@ footer p {
 footer {
   padding-top: 30px;
   
+}
+
+@media (max-width:1000px) {
+ .top-wrapper h1 {
+   color: green;
+  }
+  
+}
+
+@media(max-width:670px) {
+  .top-wrapper h1 {
+    color: red;
+  }
+
 }
